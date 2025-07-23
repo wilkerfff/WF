@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agência Criativa</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Fundo de partículas atrás do conteúdo */
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1; /* fica atrás do conteúdo */
+      background-color: #0d1117; /* cor escura para destacar as partículas */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Fundo animado de partículas -->
+  <div id="particles-js"></div>
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="fade-in"></h1>
+      <p class="fade-in">Sites profissionais para seu negócio brilhar</p>
+    </div>
+  </header>
+
+  <section id="portfolio" class="fade-in">
+  <h2>Portfólio</h2>
+  <div class="portfolio-grid">
+
+    <div class="portfolio-item">
+      <a href="https://pt.wix.com/website-template/view/html/2957?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite-template%2Fview%2Fhtml%2F2957?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%3Fcriteria%3Drestaurante&tpClick=view_button&esi=a4462331-8466-4e0b-b2d1-24a07fe0b296" target="_blank">
+        <img src="img/imagem de restaurante.png" alt="Restaurante" />
+        <h3>Restaurante Delivery</h3>
+      </a>
+    </div>
+
+    <div class="portfolio-item">
+      <a href="https://pt.wix.com/website-template/view/html/2025?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fbeauty-and-hair%2Fhair&tpClick=view_button&esi=18741e43-b6bd-4f8e-89b7-a3fdd1553ec9" target="_blank">
+        <img src="img/salao.jpg" alt="Salão de Beleza" />
+        <h3>Salão de Beleza</h3>
+      </a>
+    </div>
+
+    <div class="portfolio-item">
+      <a href="https://pt.wix.com/website-template/view/html/2175?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fonline-store%2Fjewelry-accessories&tpClick=view_button&esi=4b041d6e-7e1c-4e79-8b0e-98def4523803" target="_blank">
+        <img src="img/loja online.avif" alt="Loja Online" />
+        <h3>Loja Online</h3>
+      </a>
+    </div>
+
+  </div>
+</section>
+  <section>
+    <h2>Preços e Planos</h2>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Plano Básico</h3>
+        <p class="price">R$ 150</p>
+        <ul>
+          <li>Site simples até 3 páginas</li>
+          <li>Design responsivo</li>
+          <li>SEO básico</li>
+          <li>Suporte por 15 dias</li>
+        </ul>
+        <a
+          class="btn-whats"
+          href="https://wa.me/5594991873786?text=Oi,%20gostaria%20do%20Plano%20Básico%20de%20criação%20de%20sites."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Contratar
+        </a>
+      </div>
+
+      <div class="price-card">
+        <h3>Plano Intermediário</h3>
+        <p class="price">R$ 300</p>
+        <ul>
+          <li>Site até 6 páginas</li>
+          <li>Design personalizado</li>
+          <li>SEO avançado</li>
+          <li>Suporte por 30 dias</li>
+        </ul>
+        <a
+          class="btn-whats"
+          href="https://wa.me/5594991873786?text=Oi,%20gostaria%20do%20Plano%20Intermediário%20de%20criação%20de%20sites."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Contratar
+        </a>
+      </div>
+
+      <div class="price-card">
+        <h3>Plano Premium</h3>
+        <p class="price">R$ 500</p>
+        <ul>
+          <li>Site ilimitado</li>
+          <li>Design exclusivo</li>
+          <li>SEO completo + marketing</li>
+          <li>Suporte por 60 dias</li>
+        </ul>
+        <a
+          class="btn-whats"
+          href="https://wa.me/5594991873786?text=Oi,%20gostaria%20do%20Plano%20Premium%20de%20criação%20de%20sites."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Contratar
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer class="fade-in">
+    <p>&copy; 2025 WF Sites - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Importa o particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- Configuração das partículas -->
+  <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": { "enable": true, "value_area": 700 }
+        },
+        "color": { "value": "#00ffea" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.6, "random": false },
+        "size": { "value": 3, "random": true },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#00ffd5",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 1,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "bounce"
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": false }
+        },
+        "modes": {
+          "grab": { "distance": 140, "line_linked": { "opacity": 0.6 } }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+
+</html>
+
